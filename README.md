@@ -1,4 +1,4 @@
-# Playlist Viewer
+# Sum1SoulSolutions.com - A belief system for the rest of us
 
 This project is a web application that displays a playlist from a specified source. It uses a Cloudflare Worker to securely handle API requests to the playlist provider.
 
@@ -15,13 +15,20 @@ To use this project for your own playlist, follow these steps:
 - Node.js and npm installed
 - A Cloudflare account
 
+### Development Workflow
+
+This project uses a Gitflow-based workflow with two main branches:
+
+*   `master`: This is the production branch. It reflects the live version of the site.
+*   `develop`: This is the main development branch. All new features and bug fixes should be branched from `develop` and merged back into it. The `develop` branch is automatically deployed to a preview environment on Cloudflare Pages.
+
 ### Setup
 
 1.  **Clone the repository:**
 
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Sum1Solutions/sum1soulsolutions.git
+    cd sum1soulsolutions
     ```
 
 2.  **Install dependencies:**
