@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import './App.css';
 
 const YOUTUBE_PLAYLIST_ID = 'PL6TYbnB3Rppq9Zi_t-36-Po_hjxaY1F_R';
