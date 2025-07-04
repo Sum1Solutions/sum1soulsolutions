@@ -62,16 +62,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>sum1soulsoutions</h1>
-        <p>A gallery of my work and philosophy.</p>
-        <a
-          className="App-link"
-          href={PATREON_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Support me on Patreon
-        </a>
+        <h1>sum1soulsolutions</h1>
+        <p>Be Sum1</p>
       </header>
       <main>
         {videos.length > 0 && (
@@ -91,23 +83,31 @@ function App() {
             </div>
           ))}
         </div>
-        {selectedVideo && (
-          <div className="modal-overlay">
-            <div className="modal-content">
-              <button className="close-button" onClick={closeModal}>X</button>
-              <iframe
-                width="100%"
-                height="100%"
-                src={`https://www.youtube.com/embed/${selectedVideo.id}?autoplay=1`}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        )}
       </main>
+      <footer className="App-footer">
+        <a
+          className="App-link"
+          href={PATREON_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Support me on Patreon
+        </a>
+      </footer>
+      {selectedVideo && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <button className="close-button" onClick={closeModal}>X</button>
+            <iframe
+              src={`https://www.youtube.com/embed/${selectedVideo.id}?autoplay=1`}
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

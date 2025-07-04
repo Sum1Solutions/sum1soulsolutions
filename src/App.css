@@ -101,6 +101,30 @@ main {
   font-size: 1em;
 }
 
+/* Footer */
+.App-footer {
+  background-color: #20232a;
+  padding: 20px;
+  color: white;
+  margin-top: 40px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.App-footer .App-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff424d;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.App-footer .App-link:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
 /* Modal Player */
 .modal-overlay {
   position: fixed;
