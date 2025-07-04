@@ -1,23 +1,63 @@
-# Sum1SoulSolutions.com - A belief system for the rest of us
+# Sum1SoulSolutions.com
 
-This project is a web application that displays a playlist from a specified source. It uses a Cloudflare Worker to securely handle API requests to the playlist provider.
+A modern web application built with React and Vite, deployed on Cloudflare Pages.
 
-## How it works
+## Features
 
-The application is built with React and Vite. The frontend makes requests to a Cloudflare Worker, which then fetches the playlist data from the source API. This setup ensures that the API key is not exposed on the client-side.
+- Fast, responsive UI built with React
+- Optimized production builds with Vite
+- SPA (Single Page Application) routing
+- Cloudflare Pages deployment ready
 
 ## Getting Started
 
-To use this project for your own playlist, follow these steps:
-
 ### Prerequisites
 
-- Node.js and npm installed
-- A Cloudflare account
+- Node.js 18+ and npm 9+
+- A Cloudflare account (for deployment)
 
-### Development Workflow
+### Local Development
 
-This project uses a Gitflow-based workflow with two main branches:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+### Building for Production
+
+```bash
+# Create production build
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+## Deployment
+
+This project is configured for deployment on Cloudflare Pages. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
+
+## Project Structure
+
+- `/src` - Application source code
+- `/public` - Static assets
+- `/dist` - Production build output (generated during build)
+- `vite.config.ts` - Vite configuration
+- `tsconfig.json` - TypeScript configuration
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
 *   `master`: This is the production branch. It reflects the live version of the site.
 *   `develop`: This is the main development branch. All new features and bug fixes should be branched from `develop` and merged back into it. The `develop` branch is automatically deployed to a preview environment on Cloudflare Pages.
