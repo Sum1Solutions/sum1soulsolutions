@@ -62,8 +62,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>sum1soulsolutions</h1>
-        <p>Be Sum1</p>
+        <h1>Sum1SoulSolutions</h1>
+        <p>Perspective is Reality</p>
       </header>
       <main>
         {videos.length > 0 && (
